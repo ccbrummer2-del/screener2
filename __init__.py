@@ -1,7 +1,8 @@
 """
-UI module for FX Screener - Hybrid Customizable Version
+Core module for FX Screener - Hybrid Customizable Version
 """
-from .main_window import MainWindow
-from .settings_dialog import SettingsDialog
+from .market_analyzer import MarketAnalyzer, FX_PAIRS, AVAILABLE_TIMEFRAMES, MARKET_CATEGORIES
+from .data_fetcher import DataFetcher
+from .data_manager import DataManager
 
-__all__ = ['MainWindow', 'SettingsDialog']
+__all__ = ['MarketAnalyzer', 'DataFetcher', 'DataManager', 'FX_PAIRS', 'AVAILABLE_TIMEFRAMES', 'MARKET_CATEGORIES']
